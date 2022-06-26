@@ -8,10 +8,10 @@
         <language>en-us</language>
         <lastBuildDate>Fri, 17 Jun 2022 16:24:29 +0900</lastBuildDate><atom:link href="https://insightive.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>ssh로 GitHub 연결하기</title>
-        <link>https://insightive.github.io/posts/github/ssh_github/</link>
+        <link>https://insightive.github.io/posts/git-github/ssh_github/</link>
         <pubDate>Fri, 17 Jun 2022 16:24:29 +0900</pubDate>
         
-        <guid>https://insightive.github.io/posts/github/ssh_github/</guid>
+        <guid>https://insightive.github.io/posts/git-github/ssh_github/</guid>
         <description>&lt;p&gt;windows 10 환경에서 작업.&lt;/p&gt;
 &lt;h2 id=&#34;ssh-키를-생성해준다&#34;&gt;SSH 키를 생성해준다.&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -104,7 +104,7 @@
     &gt;sonypark.log님의 블로그&lt;/a&gt;&lt;/p&gt;</description>
         </item>
         <item>
-        <title>Hugo &#43; GitHub 블로그 구축</title>
+        <title>Hugo, GitHub 블로그 구축</title>
         <link>https://insightive.github.io/posts/blog/create_blog/</link>
         <pubDate>Thu, 16 Jun 2022 17:20:29 +0900</pubDate>
         
@@ -224,7 +224,7 @@ git cli(command line interface)로 git을 명령어를 이용해서 git을 사�
 &lt;/div&gt;
 &lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;hugo-theme을-submodule로-추가---hugo-theme을-clone-해오기&#34;&gt;&lt;del&gt;hugo-theme을 submodule로 추가&lt;/del&gt; -&amp;gt; hugo theme을 clone 해오기&lt;/h2&gt;
+&lt;h2 id=&#34;hugo-theme을-submodule로-추가&#34;&gt;hugo-theme을 submodule로 추가&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hugo-themes&lt;/a&gt;에서 원하는 테마를 고른다. &lt;em&gt;고른 테마의 &lt;strong&gt;문서&lt;/strong&gt;도 잘 읽어본다&lt;/em&gt;&lt;/li&gt;
@@ -240,12 +240,9 @@ git cli(command line interface)로 git을 명령어를 이용해서 git을 사�
 &lt;/div&gt;themes 디렉토리에 파일들이 생성된다.&lt;br&gt;
 그리고 &lt;code&gt;.gitmodules&lt;/code&gt; 파일이 생성되고, 여기에는 submodule의 정보를 가지고 있다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;hugo-theme을-clone-해오기&#34;&gt;hugo theme을 clone 해오기&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;처음에는 submodule로 추가하려고 시도했지만, 블로그 운영하면서 불편한 점이 생겨 clone 방법으로 변경한다.
-submodule로 추가해 온 theme 내부를 변경할 때, 이 내용까지 remote repository에 저장하고 싶은데, 방법을 모르겠다.&lt;br&gt;
-아직 submodule을 &lt;em&gt;잘&lt;/em&gt; 사용하는 방법은 모르는 것 같다.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h3 id=&#34;hugo-theme을-clone을-한-경우-이후에-submodule로-변경&#34;&gt;hugo theme을 clone을 한 경우, 이후에 submodule로 변경&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;hugo theme을 clone
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -254,13 +251,30 @@ submodule로 추가해 온 theme 내부를 변경할 때, 이 내용까지 remot
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;clone&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;//&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;github&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;com&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;CaiJimmy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;hugo-theme&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-stack&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;themes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;hugo-theme&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-stack&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;이렇게 clone 해오면 theme을 복사해오는 것과 같다.&lt;/p&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;clone 된 디렉토리를 submodule로 변경
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;rm &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-cached&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;themes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;hugo-theme&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-stack&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;submodule&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;//&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;github&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;com&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;CaiJimmy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;hugo-theme&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-stack&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;themes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;hugo-theme&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-stack&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;submodule로 추가한 theme을 변경할 경우, 변경한 파일을 저장할 수 있는 방법
+&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;외부 submodule을 변경하고 remote repository로 관리&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;usernamegithubio-저장소를-submodule로-추가&#34;&gt;username.github.io 저장소를 submodule로 추가&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;public 디렉토리를 먼저 삭제 한다. public으로 username.github.io 저장소를 클론해오는데 디렉토리가 이미 존재할 경우 정상 동작하지 않는다.&lt;/li&gt;
 &lt;li&gt;username.github.io submodule 추가시에는 꼭 &lt;strong&gt;ssh 주소를 사용&lt;/strong&gt;해야 한다. -&amp;gt; https로 클론할 경우 당장 에러가 발생하지 않지만, 블로그를 접속시 404에러가 발생한다.
 &lt;ul&gt;
-&lt;li&gt;GitHub ssh 클론에 필요한 방법: &lt;a class=&#34;link&#34; href=&#34;https://insightive.github.io/posts/github/ssh_github/&#34; &gt;ssh로 GitHub 연결 &amp;amp; 여러 계정 사용&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GitHub ssh 클론에 필요한 방법: &lt;a class=&#34;link&#34; href=&#34;https://insightive.github.io/posts/git-github/ssh_github/&#34; &gt;ssh로 GitHub 연결 &amp;amp; 여러 계정 사용&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;username.github.io submodule은 main branch를 설정해서 submodule을 추가한다. (작업을 push 할 예정이므로 branch 설정)

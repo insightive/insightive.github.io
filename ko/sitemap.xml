@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://insightive.github.io/categories/</loc>
-    <lastmod>2022-06-25T20:02:00+09:00</lastmod>
+    <lastmod>2022-06-26T12:39:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,23 +15,26 @@
                 href="https://insightive.github.io/categories/"
                 />
   </url><url>
-    <loc>https://insightive.github.io/tags/github/</loc>
-    <lastmod>2022-06-25T20:02:00+09:00</lastmod>
+    <loc>https://insightive.github.io/tags/git/</loc>
+    <lastmod>2022-06-26T12:39:00+09:00</lastmod>
   </url><url>
-    <loc>https://insightive.github.io/categories/github/</loc>
+    <loc>https://insightive.github.io/categories/git-github/</loc>
     <lastmod>2022-06-17T16:24:29+09:00</lastmod>
   </url><url>
+    <loc>https://insightive.github.io/tags/github/</loc>
+    <lastmod>2022-06-26T12:39:00+09:00</lastmod>
+  </url><url>
     <loc>https://insightive.github.io/posts/</loc>
-    <lastmod>2022-06-25T20:02:00+09:00</lastmod>
+    <lastmod>2022-06-26T12:39:00+09:00</lastmod>
   </url><url>
     <loc>https://insightive.github.io/tags/ssh/</loc>
     <lastmod>2022-06-17T16:24:29+09:00</lastmod>
   </url><url>
-    <loc>https://insightive.github.io/posts/github/ssh_github/</loc>
+    <loc>https://insightive.github.io/posts/git-github/ssh_github/</loc>
     <lastmod>2022-06-17T16:24:29+09:00</lastmod>
   </url><url>
     <loc>https://insightive.github.io/tags/</loc>
-    <lastmod>2022-06-25T20:02:00+09:00</lastmod>
+    <lastmod>2022-06-26T12:39:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -44,7 +47,7 @@
                 />
   </url><url>
     <loc>https://insightive.github.io/</loc>
-    <lastmod>2022-06-25T20:02:00+09:00</lastmod>
+    <lastmod>2022-06-26T12:39:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -57,16 +60,19 @@
                 />
   </url><url>
     <loc>https://insightive.github.io/tags/blog/</loc>
-    <lastmod>2022-06-25T20:02:00+09:00</lastmod>
+    <lastmod>2022-06-26T12:39:00+09:00</lastmod>
   </url><url>
     <loc>https://insightive.github.io/categories/blog/</loc>
-    <lastmod>2022-06-25T20:02:00+09:00</lastmod>
+    <lastmod>2022-06-26T12:39:00+09:00</lastmod>
   </url><url>
     <loc>https://insightive.github.io/tags/hugo/</loc>
-    <lastmod>2022-06-25T20:02:00+09:00</lastmod>
+    <lastmod>2022-06-26T12:39:00+09:00</lastmod>
   </url><url>
     <loc>https://insightive.github.io/posts/blog/create_blog/</loc>
-    <lastmod>2022-06-25T20:02:00+09:00</lastmod>
+    <lastmod>2022-06-26T12:39:00+09:00</lastmod>
+  </url><url>
+    <loc>https://insightive.github.io/tags/submodule/</loc>
+    <lastmod>2022-06-26T12:39:00+09:00</lastmod>
   </url><url>
     <loc>https://insightive.github.io/about/</loc>
     <lastmod>2022-06-14T00:00:00+00:00</lastmod>
