@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://insightive.github.io/categories/</loc>
-    <lastmod>2022-06-26T12:50:00+09:00</lastmod>
+    <lastmod>2022-06-26T20:46:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,20 +15,23 @@
                 href="https://insightive.github.io/categories/"
                 />
   </url><url>
+    <loc>https://insightive.github.io/posts/git-github/change_to_submodule/</loc>
+    <lastmod>2022-06-26T20:46:00+09:00</lastmod>
+  </url><url>
     <loc>https://insightive.github.io/tags/git/</loc>
-    <lastmod>2022-06-26T12:50:00+09:00</lastmod>
+    <lastmod>2022-06-26T20:46:00+09:00</lastmod>
   </url><url>
     <loc>https://insightive.github.io/categories/git-github/</loc>
-    <lastmod>2022-06-26T12:50:00+09:00</lastmod>
+    <lastmod>2022-06-26T20:46:00+09:00</lastmod>
   </url><url>
     <loc>https://insightive.github.io/tags/github/</loc>
-    <lastmod>2022-06-26T12:50:00+09:00</lastmod>
+    <lastmod>2022-06-26T20:46:00+09:00</lastmod>
   </url><url>
     <loc>https://insightive.github.io/posts/</loc>
-    <lastmod>2022-06-26T12:50:00+09:00</lastmod>
+    <lastmod>2022-06-26T20:46:00+09:00</lastmod>
   </url><url>
     <loc>https://insightive.github.io/tags/</loc>
-    <lastmod>2022-06-26T12:50:00+09:00</lastmod>
+    <lastmod>2022-06-26T20:46:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -41,7 +44,7 @@
                 />
   </url><url>
     <loc>https://insightive.github.io/</loc>
-    <lastmod>2022-06-26T12:50:00+09:00</lastmod>
+    <lastmod>2022-06-26T20:46:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -52,6 +55,9 @@
                 hreflang="ko"
                 href="https://insightive.github.io/"
                 />
+  </url><url>
+    <loc>https://insightive.github.io/posts/git-github/add_submodule/</loc>
+    <lastmod>2022-06-26T20:37:00+09:00</lastmod>
   </url><url>
     <loc>https://insightive.github.io/posts/git-github/edit_submodule/</loc>
     <lastmod>2022-06-26T12:50:00+09:00</lastmod>
@@ -116,8 +122,6 @@
                 href="https://insightive.github.io/page/"
                 />
   </url><url>
-    <loc>https://insightive.github.io/posts/git-github/change_to_submodule/</loc>
-  </url><url>
     <loc>https://insightive.github.io/search/</loc>
     <xhtml:link
                 rel="alternate"
@@ -129,7 +133,5 @@
                 hreflang="ko"
                 href="https://insightive.github.io/search/"
                 />
-  </url><url>
-    <loc>https://insightive.github.io/posts/git-github/add_submodule/</loc>
   </url>
 </urlset>
