@@ -116,6 +116,8 @@
                 href="https://insightive.github.io/page/"
                 />
   </url><url>
+    <loc>https://insightive.github.io/posts/git-github/change_to_submodule/</loc>
+  </url><url>
     <loc>https://insightive.github.io/search/</loc>
     <xhtml:link
                 rel="alternate"
@@ -127,5 +129,7 @@
                 hreflang="ko"
                 href="https://insightive.github.io/search/"
                 />
+  </url><url>
+    <loc>https://insightive.github.io/posts/git-github/add_submodule/</loc>
   </url>
 </urlset>

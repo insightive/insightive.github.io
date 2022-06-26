@@ -376,24 +376,14 @@ git cli(command line interface)로 git을 명령어를 이용해서 git을 사�
 </div>
 </div></li>
 </ul>
-<h2 id="hugo-theme을-submodule로-추가">hugo-theme을 submodule로 추가</h2>
+<h2 id="hugo-theme을-clone하여-변경사항을-remote-repository로-관리하는-방법">hugo theme을 clone하여, 변경사항을 remote repository로 관리하는 방법</h2>
 <ul>
 <li><a class="link" href="https://themes.gohugo.io/"  target="_blank" rel="noopener"
-    >Hugo-themes</a>에서 원하는 테마를 고른다. <em>고른 테마의 <strong>문서</strong>도 잘 읽어본다</em></li>
-<li>theme을 submodule로 추가. <em>검색해보면 여러 방법이 있는데, Hugo 공식문서에서 추천한 방법 사용</em>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">git</span> <span class="n">submodule</span> <span class="n">add</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">CaiJimmy</span><span class="p">/</span><span class="nb">hugo-theme</span><span class="n">-stack</span><span class="p">/</span> <span class="n">themes</span><span class="p">/</span><span class="nb">hugo-theme</span><span class="n">-stack</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div>themes 디렉토리에 파일들이 생성된다.<br>
-그리고 <code>.gitmodules</code> 파일이 생성되고, 여기에는 submodule의 정보를 가지고 있다.</li>
-</ul>
-<h3 id="hugo-theme을-clone을-한-경우-이후에-submodule로-변경">hugo theme을 clone을 한 경우, 이후에 submodule로 변경</h3>
+    >Hugo-themes</a>에서 원하는 테마를 고른다. <em>고른 테마의 <strong>문서</strong>도 잘 읽어본다</em>
 <ul>
+<li>hugo-theme을 submodule로 추가할 경우: <a class="link" href="https://insightive.github.io/posts/git-github/add_submodule/" >submodule 추가하는 방법</a></li>
+</ul>
+</li>
 <li>hugo theme을 clone
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -404,22 +394,70 @@ git cli(command line interface)로 git을 명령어를 이용해서 git을 사�
 </span></span></code></pre></td></tr></table>
 </div>
 </div></li>
-<li>clone 된 디렉토리를 submodule로 변경
+<li>theme의 변경 사항을 관리할 repository를 생성: <code>myusername/hugo-theme-stack</code></li>
+<li>submodule 디렉토리에서 remote repository를 추가한다.
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">git</span> <span class="nb">rm </span><span class="p">-</span><span class="n">-cached</span> <span class="p">.\</span><span class="n">themes</span><span class="p">\</span><span class="nb">hugo-theme</span><span class="n">-stack</span><span class="p">\</span>
-</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">submodule</span> <span class="n">add</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">CaiJimmy</span><span class="p">/</span><span class="nb">hugo-theme</span><span class="n">-stack</span><span class="p">/</span> <span class="n">themes</span><span class="p">/</span><span class="nb">hugo-theme</span><span class="n">-stack</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="p">&gt;</span> <span class="nb">pwd
+</span></span></span><span class="line"><span class="cl"><span class="nb"></span><span class="p">~/</span><span class="n">blog</span><span class="p">/</span><span class="n">themes</span><span class="p">/</span><span class="nb">hugo-theme</span><span class="n">-stack</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&gt;</span> <span class="n">git</span> <span class="n">remote</span> <span class="n">rename</span> <span class="n">origin</span> <span class="n">caijimmy</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&gt;</span> <span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">origin</span> <span class="n">git</span><span class="nv">@github</span><span class="p">.</span><span class="n">com</span><span class="err">:</span><span class="n">myusername</span><span class="p">/</span><span class="nb">hugo-theme</span><span class="n">-stack</span><span class="p">.</span><span class="n">git</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div></li>
+<li><code>git remote -v</code>로 remote repository 확인
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="p">&gt;</span> <span class="n">git</span> <span class="n">remote</span> <span class="n">-v</span>
+</span></span><span class="line"><span class="cl"><span class="n">caijimmy</span>        <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">CaiJimmy</span><span class="p">/</span><span class="nb">hugo-theme</span><span class="n">-stack</span><span class="p">.</span><span class="n">git</span> <span class="p">(</span><span class="n">fetch</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">caijimmy</span>        <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">CaiJimmy</span><span class="p">/</span><span class="nb">hugo-theme</span><span class="n">-stack</span><span class="p">.</span><span class="n">git</span> <span class="p">(</span><span class="n">push</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">origin</span>  <span class="n">git</span><span class="nv">@github</span><span class="p">.</span><span class="n">com</span><span class="err">:</span><span class="n">myusername</span><span class="p">/</span><span class="nb">hugo-theme</span><span class="n">-stack</span><span class="p">.</span><span class="n">git</span> <span class="p">(</span><span class="n">fetch</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">origin</span>  <span class="n">git</span><span class="nv">@github</span><span class="p">.</span><span class="n">com</span><span class="err">:</span><span class="n">myusername</span><span class="p">/</span><span class="nb">hugo-theme</span><span class="n">-stack</span><span class="p">.</span><span class="n">git</span> <span class="p">(</span><span class="n">push</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>branch 생성
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">git</span> <span class="n">branch</span> <span class="n">-M</span> <span class="n">main</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>내가 관리하는 theme(<code>myusername/hugo-theme-stack</code>)에 변경사항을 add/commit/push 한다.</li>
+<li>blog 디렉토리에서 내가 관리하는 theme(<code>myusername/hugo-theme-stack</code>)을 submodule로 추가한다.
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">git</span> <span class="n">submodule</span> <span class="n">add</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">myusername</span><span class="p">/</span><span class="nb">hugo-theme</span><span class="n">-stack</span><span class="p">/</span> <span class="n">themes</span><span class="p">/</span><span class="nb">hugo-theme</span><span class="n">-stack</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>hugo theme을 submodule로 추가했는데, 변경하고 싶을 경우: <a class="link" href="https://insightive.github.io/posts/git-github/edit_submodule/" >외부 submodule을 변경하고 remote repository로 관리</a></li>
 </ul>
-<blockquote>
-<p>submodule로 추가한 theme을 변경할 경우, 변경한 파일을 저장할 수 있는 방법: <a class="link" href="https://insightive.github.io/posts/git-github/edit_submodule/" >외부 submodule을 변경하고 remote repository로 관리</a></p>
-</blockquote>
+</li>
+</ul>
 <h2 id="usernamegithubio-저장소를-submodule로-추가">username.github.io 저장소를 submodule로 추가</h2>
 <ul>
 <li>public 디렉토리를 먼저 삭제 한다. public으로 username.github.io 저장소를 클론해오는데 디렉토리가 이미 존재할 경우 정상 동작하지 않는다.</li>
@@ -669,6 +707,32 @@ git cli(command line interface)로 git을 명령어를 이용해서 git을 사�
 </article>
 
             
+                
+<article class="">
+    <a href="/posts/git-github/change_to_submodule/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">clone 된 디렉토리를 submodule로 변경하는 방법</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/posts/git-github/add_submodule/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">submodule 추가하는 방법</h2>
+        </div>
+    </a>
+</article>
+
+            
         </div>
     </div>
 </aside>
@@ -828,11 +892,7 @@ git cli(command line interface)로 git을 명령어를 이용해서 git을 사�
       </ol>
     </li>
     <li><a href="#hugo-blog-생성">hugo blog 생성</a></li>
-    <li><a href="#hugo-theme을-submodule로-추가">hugo-theme을 submodule로 추가</a>
-      <ol>
-        <li><a href="#hugo-theme을-clone을-한-경우-이후에-submodule로-변경">hugo theme을 clone을 한 경우, 이후에 submodule로 변경</a></li>
-      </ol>
-    </li>
+    <li><a href="#hugo-theme을-clone하여-변경사항을-remote-repository로-관리하는-방법">hugo theme을 clone하여, 변경사항을 remote repository로 관리하는 방법</a></li>
     <li><a href="#usernamegithubio-저장소를-submodule로-추가">username.github.io 저장소를 submodule로 추가</a></li>
     <li><a href="#github-blog-remote-repository-연결">GitHub blog remote repository 연결</a></li>
     <li><a href="#포스팅할-글을-작성해준다">포스팅할 글을 작성해준다.</a></li>

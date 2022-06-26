@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='ssh로 GitHub 연결하기'><title>ssh로 GitHub 연결하기</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='lone 된 디렉토리를 submodule로 변경하는 방법을 따로 작성'><title>clone 된 디렉토리를 submodule로 변경하는 방법</title>
 
-<link rel='canonical' href='https://insightive.github.io/posts/git-github/ssh_github/'>
+<link rel='canonical' href='https://insightive.github.io/posts/git-github/change_to_submodule/'>
 
-<link rel="stylesheet" href="/scss/style.min.5a8e892f6fa14515e9065eee1f5d2e05302606ec7f11750b2fb95198f9cdcbfd.css"><meta property='og:title' content='ssh로 GitHub 연결하기'>
-<meta property='og:description' content='ssh로 GitHub 연결하기'>
-<meta property='og:url' content='https://insightive.github.io/posts/git-github/ssh_github/'>
+<link rel="stylesheet" href="/scss/style.min.5a8e892f6fa14515e9065eee1f5d2e05302606ec7f11750b2fb95198f9cdcbfd.css"><meta property='og:title' content='clone 된 디렉토리를 submodule로 변경하는 방법'>
+<meta property='og:description' content='lone 된 디렉토리를 submodule로 변경하는 방법을 따로 작성'>
+<meta property='og:url' content='https://insightive.github.io/posts/git-github/change_to_submodule/'>
 <meta property='og:site_name' content='공부하고 기록하고'>
-<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='GitHub' /><meta property='article:tag' content='ssh' /><meta property='article:tag' content='git' /><meta property='article:published_time' content='2022-06-17T16:24:29&#43;09:00'/><meta property='article:modified_time' content='2022-06-17T16:24:29&#43;09:00'/>
-<meta name="twitter:title" content="ssh로 GitHub 연결하기">
-<meta name="twitter:description" content="ssh로 GitHub 연결하기">
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='git' /><meta property='article:tag' content='GitHub' />
+<meta name="twitter:title" content="clone 된 디렉토리를 submodule로 변경하는 방법">
+<meta name="twitter:description" content="lone 된 디렉토리를 submodule로 변경하는 방법을 따로 작성">
     </head>
     <body class="
     article-page
@@ -209,31 +209,18 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/posts/git-github/ssh_github/">ssh로 GitHub 연결하기</a>
+            <a href="/posts/git-github/change_to_submodule/">clone 된 디렉토리를 submodule로 변경하는 방법</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            ssh로 GitHub 연결하기
+            lone 된 디렉토리를 submodule로 변경하는 방법을 따로 작성
         </h3>
         
     </div>
 
     
     <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">Jun 17, 2022</time>
-            </div>
         
 
         
@@ -247,7 +234,7 @@
 
 
                 <time class="article-time--reading">
-                    2 분 정도
+                    1 분 정도
                 </time>
             </div>
         
@@ -261,96 +248,27 @@
     <section class="article-content">
     
     
-    <p>windows 10 환경에서 작업.</p>
-<h2 id="ssh-키를-생성해준다">SSH 키를 생성해준다.</h2>
-<p><a class="link" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent"  target="_blank" rel="noopener"
-    >GitHub-Generate new SSH key</a>을 참고한다.<br>
-<em>PowerShell에서도 작업 가능하다.</em></p>
+    <p>windows 10 환겨에서 작업.</p>
+<h2 id="clone-된-디렉토리를-submodule로-변경하는-방법">clone 된 디렉토리를 submodule로 변경하는 방법</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">ssh-keygen</span> <span class="n">-t</span> <span class="n">ed25519</span> <span class="n">-C</span> <span class="s2">&#34;your_email@example.com&#34;</span> <span class="o">-f</span> <span class="s2">&#34;.ssh/filename&#34;</span>
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl">  <span class="n">git</span> <span class="nb">rm </span><span class="p">-</span><span class="n">-cached</span> <span class="p">.\</span><span class="n">themes</span><span class="p">\</span><span class="nb">hugo-theme</span><span class="n">-stack</span><span class="p">\</span>
+</span></span><span class="line"><span class="cl">  <span class="n">git</span> <span class="n">submodule</span> <span class="n">add</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">CaiJimmy</span><span class="p">/</span><span class="nb">hugo-theme</span><span class="n">-stack</span><span class="p">/</span> <span class="n">themes</span><span class="p">/</span><span class="nb">hugo-theme</span><span class="n">-stack</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
-<li><code>ed25519</code>는 암호화 알고리즘 중 하나이다. 보통 <code>rsa</code>알고리즘을 사용한다.</li>
-<li>보통 <code>C:\Users\username\.ssh</code> 디렉토리를 생성에 이 곳에 파일들을 저장한다.<br>
-<em>리눅스에서는 자동으로 <code>/home/username/.ssh</code> 디렉토리가 자동 생성되고 이 곳에 파일을 저장됐던 것 같다</em></li>
-<li>설정한 디렉토리에 <code>filename</code>과 <code>filename.pub</code> 두 파일이 생성된다.
-<ul>
-<li><code>filename</code>이 private키 이고, <code>filename.pub</code>이 public키 이다.</li>
-<li>private 키, public 키 설명: <a class="link" href="https://ko.wikipedia.org/wiki/%EA%B3%B5%EA%B0%9C_%ED%82%A4_%EC%95%94%ED%98%B8_%EB%B0%A9%EC%8B%9D#/media/%ED%8C%8C%EC%9D%BC:Public_key_encryption.svg"  target="_blank" rel="noopener"
-    >위키피디아: 공개키 암호방식 이미지</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="github에-public키를-저장">GitHub에 public키를 저장</h2>
-<p><code>Settings &gt; SSH and GPG keys &gt; SSH keys &gt; New SSH key</code></p>
-<ul>
-<li>식별하기 위한 Title을 지정하고, public키 파일을 열어 내용을 복사 붙여넣기 한다.</li>
-</ul>
-<h2 id="github을-여러-계정-사용하는-경우">GitHub을 여러 계정 사용하는 경우</h2>
-<ul>
-<li>각 GitHub에 위의 과정을 각각 진행한다.</li>
-<li>두 계정은 다른 키 파일들을 사용해야 한다. <em>같은 파일 사용하려 했지만 GitHub에 등록되지 않는다. GitHub에서 unique 검증을 하는 것이라고 추측중</em></li>
-</ul>
-<h3 id="ssh-config-설정">ssh config 설정</h3>
-<ul>
-<li><code>C:\Users\username\.ssh</code> 디렉토리에 <code>config</code> 파일을 생성한다. <em>확장자는 없다</em>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># Default GitHub username1
-</span></span><span class="line"><span class="cl">Host github.com
-</span></span><span class="line"><span class="cl">  HostName github.com
-</span></span><span class="line"><span class="cl">  IdentityFile ~./ssh/filename1
-</span></span><span class="line"><span class="cl">  User git
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"># username2
-</span></span><span class="line"><span class="cl">Host github.com-username2
-</span></span><span class="line"><span class="cl">  HostName github.com
-</span></span><span class="line"><span class="cl">  IdentityFile C:\Users\username\.ssh\filename2
-</span></span><span class="line"><span class="cl">  User git
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>Host를 다르게 설정, 식별가능하게 함.</li>
-<li>HostName은 접속하려는 host를 작성.</li>
-<li>IdentityFile은 ssh 접속시 사용하는 private 파일을 설정.</li>
-</ul>
-</li>
-</ul>
-<h3 id="ssh-config-설정을-기반으로-프로세스-이해">ssh config 설정을 기반으로 프로세스 이해</h3>
-<ul>
 <li>
-<p>git remote나 git clone을 할 경우</p>
-<ul>
-<li>Default로 설정한 git config의 Host 때문에 <code>git@github.com:username1/repo.git</code>로 remote/clone을 하면 된다.</li>
-<li>username2에서는 git config의 Host 때문에 <code>git@github.com-username2:username2/repo.git</code>로 remote/clone 하면 된다.</li>
-</ul>
+<p>즉, clone해온 디렉토리의 git캐시를 지우고, submodule로 추가.</p>
 </li>
 <li>
-<p>즉, remote/clone 시 사용하는 주소를 통해 -&gt; ssh config 파일을 바탕으로 -&gt; 접속 방법을 설정하게 된다.</p>
+<p><code>.gitmodules</code> 파일을 확인한다.</p>
 </li>
 </ul>
-<hr>
-<p>참고 사이트<br>
-<a class="link" href="https://velog.io/@sonypark/GitHubSSH%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-%EC%97%AC%EB%9F%AC%EA%B0%9C%EC%9D%98-%EA%B9%83%ED%97%88%EB%B8%8C-%EA%B3%84%EC%A0%95-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-6mk3iesh0u"  target="_blank" rel="noopener"
-    >sonypark.log님의 블로그</a></p>
+
 </section>
 
 
@@ -358,11 +276,9 @@
     
     <section class="article-tags">
         
-            <a href="/tags/github/">GitHub</a>
-        
-            <a href="/tags/ssh/">ssh</a>
-        
             <a href="/tags/git/">git</a>
+        
+            <a href="/tags/github/">GitHub</a>
         
     </section>
 
@@ -409,25 +325,12 @@
             
                 
 <article class="">
-    <a href="/posts/blog/create_blog/">
+    <a href="/posts/git-github/ssh_github/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Hugo, GitHub 블로그 구축</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/posts/git-github/change_to_submodule/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">clone 된 디렉토리를 submodule로 변경하는 방법</h2>
+            <h2 class="article-title">ssh로 GitHub 연결하기</h2>
         </div>
     </a>
 </article>
@@ -441,6 +344,19 @@
 
         <div class="article-details">
             <h2 class="article-title">submodule 추가하는 방법</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/posts/blog/create_blog/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Hugo, GitHub 블로그 구축</h2>
         </div>
     </a>
 </article>
@@ -593,14 +509,7 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#ssh-키를-생성해준다">SSH 키를 생성해준다.</a></li>
-    <li><a href="#github에-public키를-저장">GitHub에 public키를 저장</a></li>
-    <li><a href="#github을-여러-계정-사용하는-경우">GitHub을 여러 계정 사용하는 경우</a>
-      <ol>
-        <li><a href="#ssh-config-설정">ssh config 설정</a></li>
-        <li><a href="#ssh-config-설정을-기반으로-프로세스-이해">ssh config 설정을 기반으로 프로세스 이해</a></li>
-      </ol>
-    </li>
+    <li><a href="#clone-된-디렉토리를-submodule로-변경하는-방법">clone 된 디렉토리를 submodule로 변경하는 방법</a></li>
   </ol>
 </nav>
         </div>
