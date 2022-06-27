@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://insightive.github.io/en/</loc>
+    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://insightive.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://insightive.github.io/en/"
+                />
+  </url><url>
     <loc>https://insightive.github.io/en/about/</loc>
     <lastmod>2022-06-14T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -39,19 +52,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://insightive.github.io/en/page/"
-                />
-  </url><url>
-    <loc>https://insightive.github.io/en/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://insightive.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://insightive.github.io/en/"
                 />
   </url><url>
     <loc>https://insightive.github.io/en/categories/</loc>
