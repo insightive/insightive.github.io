@@ -2,8 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://insightive.github.io/tags/blog/</loc>
+    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
+  </url><url>
+    <loc>https://insightive.github.io/categories/blog/</loc>
+    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
+  </url><url>
     <loc>https://insightive.github.io/categories/</loc>
-    <lastmod>2022-06-26T20:46:00+09:00</lastmod>
+    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,23 +21,20 @@
                 href="https://insightive.github.io/categories/"
                 />
   </url><url>
-    <loc>https://insightive.github.io/posts/git-github/change_to_submodule/</loc>
-    <lastmod>2022-06-26T20:46:00+09:00</lastmod>
-  </url><url>
     <loc>https://insightive.github.io/tags/git/</loc>
-    <lastmod>2022-06-26T20:46:00+09:00</lastmod>
-  </url><url>
-    <loc>https://insightive.github.io/categories/git-github/</loc>
-    <lastmod>2022-06-26T20:46:00+09:00</lastmod>
+    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
   </url><url>
     <loc>https://insightive.github.io/tags/github/</loc>
-    <lastmod>2022-06-26T20:46:00+09:00</lastmod>
+    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
+  </url><url>
+    <loc>https://insightive.github.io/tags/hugo/</loc>
+    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
   </url><url>
     <loc>https://insightive.github.io/posts/</loc>
-    <lastmod>2022-06-26T20:46:00+09:00</lastmod>
+    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
   </url><url>
     <loc>https://insightive.github.io/tags/</loc>
-    <lastmod>2022-06-26T20:46:00+09:00</lastmod>
+    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -43,8 +46,14 @@
                 href="https://insightive.github.io/tags/"
                 />
   </url><url>
+    <loc>https://insightive.github.io/tags/utterances/</loc>
+    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
+  </url><url>
+    <loc>https://insightive.github.io/posts/blog/comments/</loc>
+    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
+  </url><url>
     <loc>https://insightive.github.io/</loc>
-    <lastmod>2022-06-26T20:46:00+09:00</lastmod>
+    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -55,6 +64,12 @@
                 hreflang="ko"
                 href="https://insightive.github.io/"
                 />
+  </url><url>
+    <loc>https://insightive.github.io/posts/git-github/change_to_submodule/</loc>
+    <lastmod>2022-06-26T20:46:00+09:00</lastmod>
+  </url><url>
+    <loc>https://insightive.github.io/categories/git-github/</loc>
+    <lastmod>2022-06-26T20:46:00+09:00</lastmod>
   </url><url>
     <loc>https://insightive.github.io/posts/git-github/add_submodule/</loc>
     <lastmod>2022-06-26T20:37:00+09:00</lastmod>
@@ -67,15 +82,6 @@
   </url><url>
     <loc>https://insightive.github.io/posts/git-github/ssh_github/</loc>
     <lastmod>2022-06-17T16:24:29+09:00</lastmod>
-  </url><url>
-    <loc>https://insightive.github.io/tags/blog/</loc>
-    <lastmod>2022-06-26T12:39:00+09:00</lastmod>
-  </url><url>
-    <loc>https://insightive.github.io/categories/blog/</loc>
-    <lastmod>2022-06-26T12:39:00+09:00</lastmod>
-  </url><url>
-    <loc>https://insightive.github.io/tags/hugo/</loc>
-    <lastmod>2022-06-26T12:39:00+09:00</lastmod>
   </url><url>
     <loc>https://insightive.github.io/posts/blog/create_blog/</loc>
     <lastmod>2022-06-26T12:39:00+09:00</lastmod>

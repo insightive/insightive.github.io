@@ -367,7 +367,7 @@ git cli(command line interface)로 git을 명령어를 이용해서 git을 사�
 &lt;p&gt;남은 작업&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;scripts로 배포 자동화하기&lt;/li&gt;
-&lt;li&gt;댓글 기능 추가하기&lt;/li&gt;
+&lt;li&gt;댓글 기능 추가하기: &lt;a class=&#34;link&#34; href=&#34;https://insightive.github.io/posts/blog/comments/&#34; &gt;utterances로 블로그 댓글 기능 추가하기&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;참고 사이트&lt;br&gt;
