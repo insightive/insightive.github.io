@@ -30,7 +30,7 @@ Hugo를 선택한 이유는 Go lang으로 되어 있기 때문이다.&lt;/p&gt;
 문서 &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/installing/#for-windows-10-users&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hugo install-Windows-set-variables&lt;/a&gt; 참고한다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://insightive.github.io/blog001.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://insightive.github.io/blog/blog001.png&#34;
 	
 	
 	
@@ -101,7 +101,7 @@ git cli(command line interface)로 git을 명령어를 이용해서 git을 사�
 &lt;/div&gt;
 &lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://insightive.github.io/hugo-new-site-result.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://insightive.github.io/blog/hugo-new-site-result.png&#34;
 	
 	
 	

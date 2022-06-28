@@ -23,7 +23,7 @@
 &lt;li&gt;
 &lt;p&gt;설치페이지: &lt;a class=&#34;link&#34; href=&#34;https://github.com/apps/utterances&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;utterances GitHub App install&lt;/a&gt;&lt;br&gt;
-&lt;img src=&#34;https://insightive.github.io/utterances_install.png&#34;
+&lt;img src=&#34;https://insightive.github.io/blog/utterances_install.png&#34;
 	
 	
 	
@@ -36,7 +36,7 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;repository와 연결: 위에서 생성한 repository를 설정한다.
-&lt;img src=&#34;https://insightive.github.io/utterances_install2.png&#34;
+&lt;img src=&#34;https://insightive.github.io/blog/utterances_install2.png&#34;
 	
 	
 	
@@ -53,7 +53,7 @@
 &lt;li&gt;
 &lt;p&gt;설정 페이지: &lt;a class=&#34;link&#34; href=&#34;https://utteranc.es/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;utteranc.es&lt;/a&gt;
-&lt;img src=&#34;https://insightive.github.io/utterances_config.png&#34;
+&lt;img src=&#34;https://insightive.github.io/blog/utterances_config.png&#34;
 	
 	
 	
@@ -65,7 +65,7 @@
 &gt;&lt;br&gt;
 위의 설정들을 지정하면&lt;/p&gt;
 &lt;p&gt;아래의 스크립트가 자동으로 생성된다. 이 스크립트를 필요한 곳에 붙여넣으면 된다.&lt;br&gt;
-&lt;img src=&#34;https://insightive.github.io/utterances_apply.png&#34;
+&lt;img src=&#34;https://insightive.github.io/blog/utterances_apply.png&#34;
 	
 	
 	
@@ -291,7 +291,7 @@
 &lt;p&gt;처음에 관련 자료가 없어서 영어로 검색 했었다.&lt;br&gt;
 물론 안 되는 영어로 &lt;code&gt;can i modify submodule of other person&lt;/code&gt; 이렇게 구글 검색.&lt;br&gt;
 구글 서치 엔진이 잘 검색주어서 아래와 같은 결과를 얻을 수 있었고, 문제 해결할 수 있었다.&lt;br&gt;
-&lt;img src=&#34;https://insightive.github.io/how_to_edit_external_submodule.png&#34;
+&lt;img src=&#34;https://insightive.github.io/git-github/how_to_edit_external_submodule.png&#34;
 	
 	
 	
@@ -426,7 +426,7 @@ Hugo를 선택한 이유는 Go lang으로 되어 있기 때문이다.&lt;/p&gt;
 문서 &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/installing/#for-windows-10-users&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hugo install-Windows-set-variables&lt;/a&gt; 참고한다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://insightive.github.io/blog001.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://insightive.github.io/blog/blog001.png&#34;
 	
 	
 	
@@ -497,7 +497,7 @@ git cli(command line interface)로 git을 명령어를 이용해서 git을 사�
 &lt;/div&gt;
 &lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://insightive.github.io/hugo-new-site-result.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://insightive.github.io/blog/hugo-new-site-result.png&#34;
 	
 	
 	
