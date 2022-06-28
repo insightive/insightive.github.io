@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://insightive.github.io/</loc>
-    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
+    <lastmod>2022-06-28T15:21:25+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,14 +15,8 @@
                 href="https://insightive.github.io/"
                 />
   </url><url>
-    <loc>https://insightive.github.io/tags/blog/</loc>
-    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
-  </url><url>
-    <loc>https://insightive.github.io/categories/blog/</loc>
-    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
-  </url><url>
     <loc>https://insightive.github.io/categories/</loc>
-    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
+    <lastmod>2022-06-28T15:21:25+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -34,20 +28,11 @@
                 href="https://insightive.github.io/categories/"
                 />
   </url><url>
-    <loc>https://insightive.github.io/tags/git/</loc>
-    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
-  </url><url>
-    <loc>https://insightive.github.io/tags/github/</loc>
-    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
-  </url><url>
-    <loc>https://insightive.github.io/tags/hugo/</loc>
-    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
-  </url><url>
     <loc>https://insightive.github.io/posts/</loc>
-    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
+    <lastmod>2022-06-28T15:21:25+09:00</lastmod>
   </url><url>
     <loc>https://insightive.github.io/tags/</loc>
-    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
+    <lastmod>2022-06-28T15:21:25+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -58,6 +43,39 @@
                 hreflang="ko"
                 href="https://insightive.github.io/tags/"
                 />
+  </url><url>
+    <loc>https://insightive.github.io/tags/visual-studio-code/</loc>
+    <lastmod>2022-06-28T15:21:25+09:00</lastmod>
+  </url><url>
+    <loc>https://insightive.github.io/tags/vs-code/</loc>
+    <lastmod>2022-06-28T15:21:25+09:00</lastmod>
+  </url><url>
+    <loc>https://insightive.github.io/posts/work-tools/vscode02/</loc>
+    <lastmod>2022-06-28T15:21:25+09:00</lastmod>
+  </url><url>
+    <loc>https://insightive.github.io/tags/vscode/</loc>
+    <lastmod>2022-06-28T15:21:25+09:00</lastmod>
+  </url><url>
+    <loc>https://insightive.github.io/categories/work-tools/</loc>
+    <lastmod>2022-06-28T15:21:25+09:00</lastmod>
+  </url><url>
+    <loc>https://insightive.github.io/posts/work-tools/vscode01/</loc>
+    <lastmod>2022-06-27T16:27:17+09:00</lastmod>
+  </url><url>
+    <loc>https://insightive.github.io/tags/blog/</loc>
+    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
+  </url><url>
+    <loc>https://insightive.github.io/categories/blog/</loc>
+    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
+  </url><url>
+    <loc>https://insightive.github.io/tags/git/</loc>
+    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
+  </url><url>
+    <loc>https://insightive.github.io/tags/github/</loc>
+    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
+  </url><url>
+    <loc>https://insightive.github.io/tags/hugo/</loc>
+    <lastmod>2022-06-27T11:24:37+09:00</lastmod>
   </url><url>
     <loc>https://insightive.github.io/tags/utterances/</loc>
     <lastmod>2022-06-27T11:24:37+09:00</lastmod>
